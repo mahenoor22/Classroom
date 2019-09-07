@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".assignment">
+    <include layout="@layout/toolbar"
+        android:id="@+id/atoolbar"></include>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="93dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:textSize="22dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/desc"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="167dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description(optional)"
+            android:textSize="22dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="266dp"
+        android:text="Points"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/points"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="40dp"
+        android:text="Due "
+        android:textSize="22dp" />
+
+    <EditText
+        android:id="@+id/points"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="260dp"
+        android:ems="10"
+        android:text="100"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/t4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:text="No Due Date"
+        android:inputType="date"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/points"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="96dp"
+        android:text="Topic "
+        android:textSize="22dp" />
+
+    <EditText
+        android:id="@+id/topic"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/t4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginRight="122dp"
+        android:ems="10"
+        android:inputType="text" />
+
+</RelativeLayout>

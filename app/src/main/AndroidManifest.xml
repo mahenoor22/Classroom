@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mprojects.classplus">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_PROFILE" />
+    <uses-permission
+        android:name="android.permission.WRITE_SECURE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".splashscreen"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".createclass"
+            android:label="Create Class"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".register"
+            android:label="Register"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".forgotp"
+            android:label="Change Password"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".joinclass"
+            android:label="Join Class"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Login"
+            android:label="Log In" />
+        <activity
+            android:name=".joined"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mprojects.classplus.joinclass" />
+        </activity>
+        <activity android:name=".Item" />
+        <activity android:name=".help" />
+        <activity
+            android:name=".assignment"
+            android:parentActivityName=".classcreated"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".announcement"
+            android:parentActivityName=".classcreated"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".material"
+            android:parentActivityName=".classcreated"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".match_key" />
+        <activity
+            android:name=".assignanswer"
+            android:label="@string/title_activity_grades"
+            android:parentActivityName=".classcreated" />
+        <activity
+            android:name=".info"
+            android:label="@string/title_activity_info" />
+        <activity
+            android:name=".setting"
+            android:label="@string/title_activity_setting" />
+        <activity
+            android:name=".classcreated"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".grades"
+            android:label="@string/title_activity_grades" />
+        <activity
+            android:name=".feedback"
+            android:label="@string/title_activity_feedback"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".Home"></activity>
+    </application>
+
+</manifest>

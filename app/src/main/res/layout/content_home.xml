@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_alignStart="@+id/toolbar"
+    android:layout_alignLeft="@+id/toolbar"
+    android:background="#d1d1d1"
+    tools:context=".Home"
+    tools:showIn="@layout/app_bar_home">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="66dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:dividerHeight="4sp"/>
+</LinearLayout>

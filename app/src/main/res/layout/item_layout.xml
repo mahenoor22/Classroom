@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Darkgreen"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:shadowColor="@color/shadow_black_overlay"
+        android:text="Name"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/txtdegree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtname"
+        android:shadowColor="@color/shadow_black_overlay"
+        android:text="Degree"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/txtstud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtdegree"
+        android:layout_alignStart="@+id/txtname"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="36dp"
+        android:shadowColor="@color/shadow_black_overlay"
+        android:text="students"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    ImageView
+        android:id="@+id/dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_more_vert_black_24dp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtstud"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="3dp"
+        android:text="Created"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/classcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtstud"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:padding="3dp"
+        android:text="Code"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

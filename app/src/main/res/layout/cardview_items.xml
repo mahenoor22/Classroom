@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:elevation="4dp"
+    android:padding="2dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Darkgreen"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ctopic"
+                android:layout_width="331dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:padding="3dp"
+                android:text="Your Topic"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#FFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/cbutton"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:padding="3dp"
+                android:text="&#8942;"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#FFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cposted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="Your postdate"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#FFFF"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:elevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/cdesc"
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"
+                android:padding="1dp"
+                android:text="Your desc"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/duedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdesc"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="0dp"
+                android:padding="1dp"
+                android:text="Your duedate"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/grey"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/qid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/duedate"
+                android:layout_toStartOf="@+id/cpoints"
+                android:layout_weight="1"
+                android:text="questid"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/cpoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdesc"
+                android:layout_alignEnd="@+id/cdesc"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="1dp"
+                android:paddingLeft="2dp"
+                android:text="Points"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/grey"
+                android:textSize="14dp"></TextView>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

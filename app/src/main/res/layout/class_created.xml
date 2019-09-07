@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".classcreated">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <include android:id="@+id/ntoolbar"
+            layout="@layout/toolbar"></include>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notices" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Classwork" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="People" />
+
+    </android.support.design.widget.TabLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </android.support.v4.view.ViewPager>
+
+
+
+        <TextView
+            android:id="@+id/aft"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/assign"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="9dp"
+            android:layout_toStartOf="@+id/assign"
+            android:layout_toLeftOf="@+id/assign"
+            android:text="Assignment"
+            android:textSize="18dp"
+            android:visibility="invisible"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/assign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fab1"
+        android:layout_alignStart="@+id/notice"
+        android:layout_marginStart="-1dp"
+        android:layout_marginBottom="106dp"
+        android:src="@drawable/ic_create_black_24dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/nft"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/notice"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginBottom="11dp"
+        android:layout_toStartOf="@+id/notice"
+        android:layout_toLeftOf="@+id/notice"
+        android:text="Announcement"
+        android:textSize="18dp"
+        android:visibility="invisible"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/material"
+        android:layout_alignStart="@+id/fab1"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-4dp"
+        android:src="@drawable/todo"
+        android:visibility="invisible"/>
+
+
+        <TextView
+            android:id="@+id/mft"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/material"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="13dp"
+            android:layout_toStartOf="@+id/material"
+            android:layout_toLeftOf="@+id/material"
+            android:text="Material"
+            android:textSize="18dp"
+            android:visibility="invisible"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/material"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fab1"
+            android:layout_alignStart="@+id/fab1"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/ic_join"
+            android:visibility="invisible"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/plus" />
+    </RelativeLayout>

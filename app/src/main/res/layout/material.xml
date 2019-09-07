@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".material"
+    android:background="#FFF">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"></include>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="76dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/mtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="145dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/mdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Details" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="212dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/mfilename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Filename" />
+    </android.support.design.widget.TextInputLayout>
+</RelativeLayout>

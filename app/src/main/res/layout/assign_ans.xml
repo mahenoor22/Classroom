@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".assignanswer"
+    android:background="#FFFFFF">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/gtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        android:background="@color/colorPrimary"></android.support.v7.widget.Toolbar>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Attach Your File"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="502dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="453dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Attach Your File"
+                android:textAlignment="center"
+                android:textSize="22dp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="69dp"
+                android:layout_marginLeft="69dp"
+                android:layout_marginBottom="-347dp"
+                android:src="@drawable/plus" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
